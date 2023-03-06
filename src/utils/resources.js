@@ -2,7 +2,7 @@
 // We create a separate entity (Class) for this purpose to load all these types of data
 // First you need to have an idea what type of data we will load
 
-const RESOURCE_TYPE = {
+export const RESOURCE_TYPE = {
   IMAGE: "image"
 };
 
