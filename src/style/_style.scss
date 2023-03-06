@@ -54,17 +54,4 @@
 .rotate-phone {
   height: 300px;
   display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: $color-grey;
-  &__img {
-    width: 80px;
-    margin-bottom: 20px;
-  }
-  &__text {
-    font-family: 'Montserrat';
-    font-size: 20px;
-    color: $color-white;
-  }
 }

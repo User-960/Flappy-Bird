@@ -1,0 +1,23 @@
+@media (max-width: 582px) {
+  .main {
+    display: none;
+  }
+  .rotate-phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .rotate-phone__img {
+    width: 80px;
+    margin-bottom: 20px;
+  }
+  .rotate-phone__text {
+    font-weight: bold;
+    font-family: 'a_FuturaRound';
+    color: $color-white;
+    font-size: 22px;
+    text-shadow: $box-shadow-phone;
+    text-align: center;
+  }
+}
