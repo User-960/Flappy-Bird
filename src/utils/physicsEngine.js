@@ -1,6 +1,4 @@
 /* eslint-disable no-param-reassign */
-// An engine that implements the laws of physics
-// Now the entity will fall with acceleration
 export default class PhysicsEngine {
   constructor({ gravity }) {
     this._gravity = gravity;
