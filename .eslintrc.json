@@ -25,6 +25,7 @@
       "no-alert": "error", // disallow the use of alert, confirm, and prompt
       "eqeqeq": "off", // require the use of === and !==
       "camelcase": "off",
+      "no-restricted-globals": ["error", "event"],
       "no-underscore-dangle": "off",
       "max-classes-per-file": "off",
       "object-curly-newline": ["off", "always"],
