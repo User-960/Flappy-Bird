@@ -1,6 +1,6 @@
 // The Base class contains a property and methods that are the same for all entities
 
-class Base {
+export default class Base {
   constructor({ x, y, width, height, frames, spriteSheet, drawEngine, game }) {
     // public fields to be interacted with
     this.x = x;
@@ -37,4 +37,3 @@ class Base {
     this._frameIndex = (this._frameIndex + Math.ceil(delta)) % this._frames.length;
   }
 }
-export default new Base();
