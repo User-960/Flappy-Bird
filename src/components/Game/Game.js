@@ -147,6 +147,13 @@ class Game {
     }
   }
 
+  // game counter
+  createCounter() {
+    this._counter = document.getElementById(this._config.canvas.counterId);
+    this._counter.innerText = `${this._score}`;
+    this._counter.style.display = "block";
+  }
+
   // start game
   start() {
     this._canvas.removeEventListener("click", this._canvasListener);
@@ -159,7 +166,7 @@ class Game {
     this._lastUpdate = Date.now();
 
     // run a loop with drawing entities and create a score counter
-    // this.createCounter();
+    this.createCounter();
     this._loop();
   }
 
