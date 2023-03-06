@@ -11,7 +11,7 @@ What is used:
 - Programming languages: HTML, CSS, JavaScript ES6;
 - Bundler: Webpack;
 - Preprocessor: SCSS;
-- Libraries: Babel, ESLint;
+- Libraries: Babel, ESLint, Husky;
 
 To clone repository
 
