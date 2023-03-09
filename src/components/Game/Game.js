@@ -17,6 +17,11 @@ import ResourceLoader from "../../utils/resources";
 import { RESOURCE_TYPE } from "../../utils/resources";
 import MouseInputHandler from "../../utils/inputHandlers";
 
+import audioFlap from "../../audio/audio_sfx_flap.wav";
+import audioHit from "../../audio/audio_sfx_hit.wav";
+import audioDie from "../../audio/audio_sfx_die.wav";
+import audioPoint from "../../audio/audio_sfx_point.wav";
+
 class Game {
   constructor() {
     // config
@@ -33,6 +38,19 @@ class Game {
     // size of the game
     this.height = this._config.canvas.height;
     this.width = this._config.canvas.width;
+
+    // sounds of the game
+    this.audioHit = new Audio();
+    this.audioHit.src = audioHit;
+
+    this.audioFlap = new Audio();
+    this.audioFlap.src = audioFlap;
+
+    this.audioPoint = new Audio();
+    this.audioPoint.src = audioPoint;
+
+    this.audioDie = new Audio();
+    this.audioDie.src = audioDie;
 
     // rating
     this._score = 0;
@@ -232,6 +250,7 @@ class Game {
     && (this._bird.x + (this._bird.width / 2) + range) > this._pipes.x + (this._pipes.width / 2);
 
     if (conditionForIncrease) {
+      this.audioPoint.play();
       ++this._score;
       this._counter.innerText = `${this._score}`;
     }
